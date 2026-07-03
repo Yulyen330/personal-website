@@ -1,0 +1,137 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Warm, emotional cream + terracotta palette */
+  --background: #faf6f0;
+  --foreground: #2e2620;
+  --card: #ffffff;
+  --card-foreground: #2e2620;
+  --popover: #ffffff;
+  --popover-foreground: #2e2620;
+  --primary: #c2693f;
+  --primary-foreground: #fffaf4;
+  --secondary: #f0e6da;
+  --secondary-foreground: #5c4a3a;
+  --muted: #f0e6da;
+  --muted-foreground: #8a7a6a;
+  --accent: #d99a5b;
+  --accent-foreground: #2e2620;
+  --destructive: #c0492b;
+  --destructive-foreground: #fffaf4;
+  --border: #e7dccd;
+  --input: #f0e6da;
+  --ring: #c2693f;
+  --chart-1: #c2693f;
+  --chart-2: #d99a5b;
+  --chart-3: #a8744f;
+  --chart-4: #e7c9a3;
+  --chart-5: #8a7a6a;
+  --radius: 0.875rem;
+  --sidebar: #faf6f0;
+  --sidebar-foreground: #2e2620;
+  --sidebar-primary: #c2693f;
+  --sidebar-primary-foreground: #fffaf4;
+  --sidebar-accent: #d99a5b;
+  --sidebar-accent-foreground: #2e2620;
+  --sidebar-border: #e7dccd;
+  --sidebar-ring: #c2693f;
+}
+
+.dark {
+  /* Dark mode warm palette */
+  --background: #1c1814;
+  --foreground: #f3ece2;
+  --card: #272019;
+  --card-foreground: #f3ece2;
+  --popover: #272019;
+  --popover-foreground: #f3ece2;
+  --primary: #e0875a;
+  --primary-foreground: #1c1814;
+  --secondary: #332a21;
+  --secondary-foreground: #e8dccb;
+  --muted: #332a21;
+  --muted-foreground: #b3a596;
+  --accent: #d99a5b;
+  --accent-foreground: #1c1814;
+  --destructive: #e0875a;
+  --destructive-foreground: #1c1814;
+  --border: #3d3328;
+  --input: #272019;
+  --ring: #e0875a;
+  --chart-1: #e0875a;
+  --chart-2: #d99a5b;
+  --chart-3: #c2693f;
+  --chart-4: #8a6a4a;
+  --chart-5: #b3a596;
+  --sidebar: #272019;
+  --sidebar-foreground: #f3ece2;
+  --sidebar-primary: #e0875a;
+  --sidebar-primary-foreground: #1c1814;
+  --sidebar-accent: #d99a5b;
+  --sidebar-accent-foreground: #1c1814;
+  --sidebar-border: #3d3328;
+  --sidebar-ring: #e0875a;
+}
+
+@theme inline {
+  --font-sans: var(--font-noto-sans-kr), "Geist Fallback";
+  --font-serif: var(--font-noto-serif-kr), "Geist Fallback";
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.font-eyebrow {
+  font-family: var(--font-serif), ui-serif, serif;
+  font-style: italic;
+}
