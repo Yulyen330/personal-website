@@ -24,20 +24,20 @@ export default function FeaturedShorts() {
       videoId: "7643415094465973511",
     },
     {
-      platform: "youtube",
-      title: "BLACKHOLE - IVE Cover",
-      description: "커버 보컬로 자주 활용되는 구간을 골라 제작한 숏폼 커버 콘텐츠",
-      badges: ["Vocal Cover", "YouTube Shorts"],
-      url: "https://www.youtube.com/shorts/3OgwApG1WSc",
-      embedUrl: "https://www.youtube.com/embed/3OgwApG1WSc",
-    },
-    {
       platform: "tiktok",
       title: "HER - 블락비(Block B) Cover",
-      description: "커버하면서 유독 즐거웠던 곡으로, 감정 표현에 집중해서 제작한 보컬 커버 콘텐츠",
-      badges: ["Vocal Cover", "TikTok"],
+      description: "인기 아이돌 그룹 블락비의 곡을 감성 보컬 커버로 재해석한 콘텐츠",
+      badges: ["9,966 조회", "TikTok"],
       url: "https://www.tiktok.com/@min_s_ing/video/7663920200571440392",
       videoId: "7663920200571440392",
+    },
+    {
+      platform: "youtube",
+      title: "BLACKHOLE - IVE Cover",
+      description: "인기 아이돌 그룹 IVE의 곡을 커버한 숏폼 보컬 콘텐츠",
+      badges: ["9,720 조회", "YouTube Shorts"],
+      url: "https://www.youtube.com/shorts/3OgwApG1WSc",
+      embedUrl: "https://www.youtube.com/embed/3OgwApG1WSc",
     },
   ]
 
