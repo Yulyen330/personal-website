@@ -1,7 +1,8 @@
 "use client"
 
+import Image from "next/image"
 import { motion } from "framer-motion"
-import { Youtube, Music2, ExternalLink } from "lucide-react"
+import { Youtube, Music2, ExternalLink, Play } from "lucide-react"
 
 interface Short {
   platform: "youtube" | "tiktok"
@@ -11,6 +12,7 @@ interface Short {
   url: string
   embedUrl?: string
   videoId?: string
+  thumbnail?: string
 }
 
 export default function FeaturedShorts() {
@@ -22,6 +24,7 @@ export default function FeaturedShorts() {
       badges: ["47K 조회", "Algorithm Pick"],
       url: "https://www.tiktok.com/@min_s_ing/video/7643415094465973511",
       videoId: "7643415094465973511",
+      thumbnail: "/images/tiktok-ioi-cover.jpg",
     },
     {
       platform: "tiktok",
@@ -30,6 +33,7 @@ export default function FeaturedShorts() {
       badges: ["9.9K 조회", "TikTok"],
       url: "https://www.tiktok.com/@min_s_ing/video/7663920200571440392",
       videoId: "7663920200571440392",
+      thumbnail: "/images/tiktok-her-cover.png",
     },
     {
       platform: "youtube",
@@ -86,15 +90,27 @@ export default function FeaturedShorts() {
                       className="absolute inset-0 w-full h-full"
                       loading="lazy"
                     />
-                  ) : short.platform === "tiktok" && short.videoId ? (
-                    <iframe
-                      src={`https://www.tiktok.com/embed/v2/${short.videoId}`}
-                      title={short.title}
-                      allow="encrypted-media; picture-in-picture"
-                      scrolling="no"
-                      className="absolute inset-0 w-full h-full border-0"
-                      loading="lazy"
-                    />
+                  ) : short.platform === "tiktok" && short.thumbnail ? (
+                    <a
+                      href={short.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group absolute inset-0"
+                      aria-label={`${short.title} - TikTok에서 보기`}
+                    >
+                      <Image
+                        src={short.thumbnail}
+                        alt={short.title}
+                        fill
+                        className="object-cover"
+                        loading="lazy"
+                      />
+                      <span className="absolute inset-0 bg-black/20 group-hover:bg-black/35 transition-colors flex items-center justify-center">
+                        <span className="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center group-hover:scale-110 transition-transform">
+                          <Play className="w-6 h-6 text-foreground fill-current ml-1" aria-hidden="true" />
+                        </span>
+                      </span>
+                    </a>
                   ) : null}
                 </div>
 
