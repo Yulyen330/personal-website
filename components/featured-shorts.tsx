@@ -91,7 +91,8 @@ export default function FeaturedShorts() {
                       src={`https://www.tiktok.com/embed/v2/${short.videoId}`}
                       title={short.title}
                       allow="encrypted-media; picture-in-picture"
-                      className="absolute inset-0 w-full h-full"
+                      scrolling="no"
+                      className="absolute inset-0 w-full h-full border-0"
                       loading="lazy"
                     />
                   ) : null}
