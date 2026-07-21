@@ -50,7 +50,7 @@ export default function Header({ isDark, toggleDarkMode }: HeaderProps) {
                   priority
                 />
               </div>
-              <span className="font-serif font-semibold text-lg hidden sm:inline">김정민</span>
+              <span className="font-sans font-semibold text-lg hidden sm:inline">김정민</span>
             </Link>
 
             <nav className="hidden md:flex items-center gap-6" aria-label="주요 메뉴">

@@ -47,7 +47,7 @@ export default function Contact() {
           viewport={{ once: true, margin: "-100px" }}
         >
           <motion.div variants={itemVariants} className="mb-4">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-balance">함께해요</h2>
+            <h2 className="font-sans text-4xl md:text-5xl font-bold text-balance">함께해요</h2>
           </motion.div>
 
           <motion.p variants={itemVariants} className="text-muted-foreground leading-relaxed mb-12 text-pretty">

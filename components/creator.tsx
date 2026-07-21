@@ -43,7 +43,7 @@ export default function Creator() {
           viewport={{ once: true, margin: "-100px" }}
         >
           <motion.div variants={itemVariants} className="mb-10">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold tracking-tight text-balance mb-3">
+            <h2 className="font-sans text-4xl md:text-5xl font-bold tracking-tight text-balance mb-3">
               YouTube / TikTok Music Content
             </h2>
             <p className="text-muted-foreground leading-relaxed max-w-2xl">

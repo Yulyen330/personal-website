@@ -53,7 +53,7 @@ export default function About() {
           viewport={{ once: true, margin: "-100px" }}
         >
           <motion.div variants={itemVariants} className="mb-12">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold tracking-tight text-balance">소개</h2>
+            <h2 className="font-sans text-4xl md:text-5xl font-bold tracking-tight text-balance">소개</h2>
           </motion.div>
 
           <motion.div variants={itemVariants} className="grid gap-4 sm:grid-cols-3 mb-12">

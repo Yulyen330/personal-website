@@ -69,7 +69,7 @@ export default function Activities() {
           viewport={{ once: true, margin: "-100px" }}
         >
           <motion.div variants={itemVariants} className="mb-12">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold tracking-tight text-balance">활동</h2>
+            <h2 className="font-sans text-4xl md:text-5xl font-bold tracking-tight text-balance">활동</h2>
           </motion.div>
 
           <div className="grid gap-5 lg:grid-cols-3">

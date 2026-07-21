@@ -68,7 +68,7 @@ export default function Hero() {
 
           <motion.h1
             variants={itemVariants}
-            className="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold mb-4 text-balance leading-tight"
+            className="font-sans text-5xl sm:text-6xl lg:text-7xl font-bold mb-4 text-balance leading-tight"
           >
             김정민
           </motion.h1>

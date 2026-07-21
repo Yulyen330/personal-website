@@ -19,7 +19,7 @@ export default function FeaturedShorts() {
       platform: "tiktok",
       title: "갑자기 - 아이오아이(I.O.I) Cover",
       description: "최신곡 중 알고리즘을 탈 가능성이 있는 곡을 선택해 라이브 커버 형식으로 제작한 콘텐츠",
-      badges: ["4만+ 조회", "Algorithm Pick"],
+      badges: ["47K 조회", "Algorithm Pick"],
       url: "https://www.tiktok.com/@min_s_ing/video/7643415094465973511",
       videoId: "7643415094465973511",
     },
@@ -27,7 +27,7 @@ export default function FeaturedShorts() {
       platform: "tiktok",
       title: "HER - 블락비(Block B) Cover",
       description: "인기 아이돌 그룹 블락비의 곡을 감성 보컬 커버로 재해석한 콘텐츠",
-      badges: ["9,966 조회", "TikTok"],
+      badges: ["9.9K 조회", "TikTok"],
       url: "https://www.tiktok.com/@min_s_ing/video/7663920200571440392",
       videoId: "7663920200571440392",
     },
@@ -35,7 +35,7 @@ export default function FeaturedShorts() {
       platform: "youtube",
       title: "BLACKHOLE - IVE Cover",
       description: "인기 아이돌 그룹 IVE의 곡을 커버한 숏폼 보컬 콘텐츠",
-      badges: ["9,720 조회", "YouTube Shorts"],
+      badges: ["9.7K 조회", "YouTube Shorts"],
       url: "https://www.youtube.com/shorts/3OgwApG1WSc",
       embedUrl: "https://www.youtube.com/embed/3OgwApG1WSc",
     },
@@ -61,7 +61,7 @@ export default function FeaturedShorts() {
           viewport={{ once: true, margin: "-100px" }}
         >
           <motion.div variants={itemVariants} className="mb-10">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold tracking-tight text-balance mb-3">
+            <h2 className="font-sans text-4xl md:text-5xl font-bold tracking-tight text-balance mb-3">
               대표 콘텐츠
             </h2>
             <p className="text-muted-foreground leading-relaxed max-w-2xl">

@@ -33,7 +33,7 @@ export default function Awards() {
           viewport={{ once: true, margin: "-100px" }}
         >
           <motion.div variants={itemVariants} className="mb-12">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-balance">수상 경력</h2>
+            <h2 className="font-sans text-4xl md:text-5xl font-bold text-balance">수상 경력</h2>
           </motion.div>
 
           <div className="grid gap-4 sm:grid-cols-2">

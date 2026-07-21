@@ -45,7 +45,7 @@ export default function Focus() {
           viewport={{ once: true, margin: "-100px" }}
         >
           <motion.div variants={itemVariants} className="mb-12">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-balance">관심 분야</h2>
+            <h2 className="font-sans text-4xl md:text-5xl font-bold text-balance">관심 분야</h2>
           </motion.div>
 
           <div className="grid gap-5 md:grid-cols-3">
@@ -58,7 +58,7 @@ export default function Focus() {
                 <div className="w-14 h-14 rounded-xl bg-secondary flex items-center justify-center mb-5">
                   {card.icon}
                 </div>
-                <h3 className="font-serif text-xl font-bold mb-1 text-foreground">{card.title}</h3>
+                <h3 className="font-sans text-xl font-bold mb-1 text-foreground">{card.title}</h3>
                 <p className="text-sm text-primary font-medium mb-3">{card.ko}</p>
                 <p className="text-sm text-muted-foreground leading-relaxed text-pretty">{card.description}</p>
               </motion.div>

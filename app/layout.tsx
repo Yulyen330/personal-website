@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Noto_Sans_KR, Noto_Serif_KR } from "next/font/google"
+import { Noto_Sans_KR } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
@@ -8,12 +8,6 @@ const notoSansKR = Noto_Sans_KR({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
   variable: "--font-noto-sans-kr",
-})
-
-const notoSerifKR = Noto_Serif_KR({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-noto-serif-kr",
 })
 
 export const metadata: Metadata = {
@@ -61,7 +55,7 @@ export default function RootLayout({
     <html
       lang="ko"
       suppressHydrationWarning
-      className={`${notoSansKR.variable} ${notoSerifKR.variable} bg-background`}
+      className={`${notoSansKR.variable} bg-background`}
     >
       <body className="font-sans antialiased">
         {children}

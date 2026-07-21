@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-8 mb-8">
           <div>
-            <p className="font-serif font-bold text-lg mb-1">김정민 · MIN_s_ing</p>
+            <p className="font-sans font-bold text-lg mb-1">김정민 · MIN_s_ing</p>
             <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
               심리학과 미디어, AI헬스케어를 바탕으로 사람에게 닿는 콘텐츠를 기획합니다.
             </p>
