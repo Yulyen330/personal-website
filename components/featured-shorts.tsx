@@ -27,7 +27,7 @@ export default function FeaturedShorts() {
       platform: "tiktok",
       title: "HER - 블락비(Block B) Cover",
       description: "인기 아이돌 그룹 블락비의 곡을 감성 보컬 커버로 재해석한 콘텐츠",
-      badges: ["9.9K 조회", "TikTok"],
+      badges: ["10K+ 조회", "TikTok"],
       url: "https://www.tiktok.com/@min_s_ing/video/7663920200571440392",
       videoId: "7663920200571440392",
     },
