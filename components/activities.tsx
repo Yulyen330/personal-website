@@ -69,7 +69,6 @@ export default function Activities() {
           viewport={{ once: true, margin: "-100px" }}
         >
           <motion.div variants={itemVariants} className="mb-12">
-            <p className="font-eyebrow text-xl text-primary mb-1">활동 기록</p>
             <h2 className="font-serif text-4xl md:text-5xl font-bold tracking-tight text-balance">활동</h2>
           </motion.div>
 

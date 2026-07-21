@@ -45,7 +45,6 @@ export default function Focus() {
           viewport={{ once: true, margin: "-100px" }}
         >
           <motion.div variants={itemVariants} className="mb-12">
-            <p className="font-eyebrow text-xl text-primary mb-1">관심사예요</p>
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-balance">관심 분야</h2>
           </motion.div>
 

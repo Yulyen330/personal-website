@@ -33,11 +33,11 @@ export default function FeaturedShorts() {
     },
     {
       platform: "tiktok",
-      title: "Golden - KPop Demon Hunters Cover",
-      description: "세계적으로 인기가 높았던 곡을 활용해 트렌드와 음악 콘텐츠를 연결한 콘텐츠",
-      badges: ["Trend-based", "TikTok"],
-      url: "https://www.tiktok.com/@min_s_ing/video/7631518234302369031",
-      videoId: "7631518234302369031",
+      title: "HER - 블락비(Block B) Cover",
+      description: "커버하면서 유독 즐거웠던 곡으로, 감정 표현에 집중해서 제작한 보컬 커버 콘텐츠",
+      badges: ["Vocal Cover", "TikTok"],
+      url: "https://www.tiktok.com/@min_s_ing/video/7663920200571440392",
+      videoId: "7663920200571440392",
     },
   ]
 
@@ -61,7 +61,6 @@ export default function FeaturedShorts() {
           viewport={{ once: true, margin: "-100px" }}
         >
           <motion.div variants={itemVariants} className="mb-10">
-            <p className="font-eyebrow text-xl text-primary mb-1">인기 콘텐츠</p>
             <h2 className="font-serif text-4xl md:text-5xl font-bold tracking-tight text-balance mb-3">
               대표 콘텐츠
             </h2>

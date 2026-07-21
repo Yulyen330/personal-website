@@ -47,7 +47,6 @@ export default function Contact() {
           viewport={{ once: true, margin: "-100px" }}
         >
           <motion.div variants={itemVariants} className="mb-4">
-            <p className="font-eyebrow text-xl text-primary mb-1">연락해요</p>
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-balance">함께해요</h2>
           </motion.div>
 

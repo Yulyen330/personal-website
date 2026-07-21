@@ -130,8 +130,3 @@
 html {
   scroll-behavior: smooth;
 }
-
-.font-eyebrow {
-  font-family: var(--font-serif), ui-serif, serif;
-  font-style: italic;
-}

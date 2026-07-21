@@ -96,7 +96,6 @@ export default function Projects() {
           viewport={{ once: true, margin: "-100px" }}
         >
           <motion.div variants={itemVariants} className="mb-12">
-            <p className="font-eyebrow text-xl text-primary mb-1">해온 일들</p>
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-balance">프로젝트</h2>
           </motion.div>
 
